@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GoldBharat Sequential Execution Suite]" guice-stage="DEVELOPMENT" verbose="2">
+  <test thread-count="5" name="GoldBharat End To End Workflows(failed)" verbose="2">
+    <classes>
+      <class name="Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest">
+        <methods>
+          <include name="RegisteringToGoldbharathTest"/>
+          <include name="distributorUpdatingDeliveryDetailsTest"/>
+          <include name="loginToAdminRejectingDistributorKycTest"/>
+          <include name="distributorBookingGoldTest"/>
+          <include name="adminAcceptingPickerDetails"/>
+          <include name="loginUpdatingKycTest"/>
+          <include name="loginToAdminApproveKycAndGivingGoldAndSilverLimitTest"/>
+          <include name="adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest"/>
+          <include name="closeBrowser"/>
+          <include name="distributorReUploadingPaymentDetailsTest"/>
+          <include name="loginUpdatingRejectedKycTest"/>
+          <include name="distributorBuyingGoldTest"/>
+          <include name="adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest"/>
+        </methods>
+      </class> <!-- Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest -->
+    </classes>
+  </test> <!-- GoldBharat End To End Workflows(failed) -->
+</suite> <!-- Failed suite [GoldBharat Sequential Execution Suite] -->

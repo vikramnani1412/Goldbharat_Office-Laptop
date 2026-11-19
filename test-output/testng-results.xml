@@ -1,0 +1,505 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="0" total="49" passed="48" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-11-19T14:06:05 IST" name="GoldBharat Sequential Execution Suite" finished-at="2026-11-19T14:49:20 IST" duration-ms="2595489">
+    <groups>
+    </groups>
+    <test started-at="2026-11-19T14:06:05 IST" name="GoldBharat End To End Workflows" finished-at="2026-11-19T14:49:20 IST" duration-ms="2595489">
+      <class name="Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest">
+        <test-method signature="RegisteringToGoldbharathTest(java.util.List)[pri:1, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:26:39 IST" name="RegisteringToGoldbharathTest" data-provider="mobileNumbers" finished-at="2026-11-19T14:28:14 IST" duration-ms="95920" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[9999999999, 9999999998, 9999999988, 9999999888, 9999998888, 9999988888, 9999888888, 9998888888, 9988888888, 9888888888, 9777777777, 9666666666, 9555555555, 9444444444, 9333333333, 9222222222, 9111111111, 9888889999, 9777778888, 9666669999]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteringToGoldbharathTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:28:14 IST" name="closeBrowser" finished-at="2026-11-19T14:28:15 IST" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginUpdatingKycTest()[pri:2, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:28:15 IST" name="loginUpdatingKycTest" finished-at="2026-11-19T14:29:20 IST" depends-on-methods="Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.RegisteringToGoldbharathTest" duration-ms="65131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUpdatingKycTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:29:20 IST" name="closeBrowser" finished-at="2026-11-19T14:29:20 IST" duration-ms="160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginToAdminRejectingDistributorKycTest()[pri:3, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:29:20 IST" name="loginToAdminRejectingDistributorKycTest" finished-at="2026-11-19T14:29:41 IST" depends-on-methods="Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingKycTest" duration-ms="21215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAdminRejectingDistributorKycTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:29:41 IST" name="closeBrowser" finished-at="2026-11-19T14:29:41 IST" duration-ms="143" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginUpdatingRejectedKycTest()[pri:4, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:29:41 IST" name="loginUpdatingRejectedKycTest" finished-at="2026-11-19T14:30:52 IST" depends-on-methods="Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminRejectingDistributorKycTest" duration-ms="70039" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUpdatingRejectedKycTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:30:52 IST" name="closeBrowser" finished-at="2026-11-19T14:30:52 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginToAdminApproveKycAndGivingGoldAndSilverLimitTest()[pri:5, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:30:52 IST" name="loginToAdminApproveKycAndGivingGoldAndSilverLimitTest" finished-at="2026-11-19T14:33:13 IST" depends-on-methods="Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingRejectedKycTest" duration-ms="141456" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAdminApproveKycAndGivingGoldAndSilverLimitTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:33:13 IST" name="closeBrowser" finished-at="2026-11-19T14:33:13 IST" duration-ms="169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="distributorBookingGoldTest()[pri:6, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:33:13 IST" name="distributorBookingGoldTest" finished-at="2026-11-19T14:34:05 IST" depends-on-methods="Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminApproveKycAndGivingGoldAndSilverLimitTest" duration-ms="51198" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distributorBookingGoldTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:34:05 IST" name="closeBrowser" finished-at="2026-11-19T14:34:05 IST" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="distributorBuyingGoldTest()[pri:7, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:34:05 IST" name="distributorBuyingGoldTest" finished-at="2026-11-19T14:34:58 IST" depends-on-methods="Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.distributorBookingGoldTest" duration-ms="53734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distributorBuyingGoldTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:34:58 IST" name="closeBrowser" finished-at="2026-11-19T14:34:59 IST" duration-ms="221" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest()[pri:8, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:34:59 IST" name="adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest" finished-at="2026-11-19T14:35:33 IST" depends-on-methods="Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.distributorBuyingGoldTest" duration-ms="34777" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:35:33 IST" name="closeBrowser" finished-at="2026-11-19T14:35:34 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="distributorReUploadingPaymentDetailsTest()[pri:9, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:35:34 IST" name="distributorReUploadingPaymentDetailsTest" finished-at="2026-11-19T14:36:08 IST" depends-on-methods="Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest" duration-ms="34072" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distributorReUploadingPaymentDetailsTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:36:08 IST" name="closeBrowser" finished-at="2026-11-19T14:36:08 IST" duration-ms="185" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest()[pri:10, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:36:08 IST" name="adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest" finished-at="2026-11-19T14:36:45 IST" depends-on-methods="Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.distributorReUploadingPaymentDetailsTest" duration-ms="37024" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:36:45 IST" name="closeBrowser" finished-at="2026-11-19T14:36:45 IST" duration-ms="157" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="distributorUpdatingDeliveryDetailsTest()[pri:11, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:36:45 IST" name="distributorUpdatingDeliveryDetailsTest" finished-at="2026-11-19T14:37:16 IST" depends-on-methods="Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest" duration-ms="31186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distributorUpdatingDeliveryDetailsTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:37:16 IST" name="closeBrowser" finished-at="2026-11-19T14:37:16 IST" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="adminAcceptingPickerDetails()[pri:12, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:37:16 IST" name="adminAcceptingPickerDetails" finished-at="2026-11-19T14:37:48 IST" depends-on-methods="Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.distributorUpdatingDeliveryDetailsTest" duration-ms="31332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminAcceptingPickerDetails -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb]" started-at="2026-11-19T14:37:48 IST" name="closeBrowser" finished-at="2026-11-19T14:37:48 IST" duration-ms="162" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest -->
+      <class name="Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest">
+        <test-method signature="RegisteringToGoldbharathTest(java.util.List)[pri:1, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:37:48 IST" name="RegisteringToGoldbharathTest" data-provider="mobileNumbers" finished-at="2026-11-19T14:39:34 IST" duration-ms="105562" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[9999999999, 9999999998, 9999999988, 9999999888, 9999998888, 9999988888, 9999888888, 9998888888, 9988888888, 9888888888, 9777777777, 9666666666, 9555555555, 9444444444, 9333333333, 9222222222, 9111111111, 9888889999, 9777778888, 9666669999]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteringToGoldbharathTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:39:34 IST" name="closeBrowser" finished-at="2026-11-19T14:39:34 IST" duration-ms="180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method retried="true" signature="loginUpdatingKycTest()[pri:2, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:39:34 IST" name="loginUpdatingKycTest" finished-at="2026-11-19T14:39:52 IST" depends-on-methods="Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.RegisteringToGoldbharathTest" duration-ms="18361" status="SKIP">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a _ngcontent-ng-c525558952="" data-bs-toggle="modal" data-bs-target="#exampleModalLogout" class="user-logo-letter">...</a> is not clickable at point (1223, 36). Other element would receive the click: <div _ngcontent-ng-c179827752="" class="ng-toast success">...</div>
+  (Session info: chrome=157.0.8103.79)
+Build info: version: '4.51.0', revision: '35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.5.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e70901cbbd40514708c7256d0c36e66, clickElement {id=f.38C59F13F7F12BD126E8EE0E74D5E51C.d.A5233A9CE114CD6E5925C1DDBEBF9D8D.e.281}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.79, chrome: {chromedriverVersion: 157.0.8103.78 (4b3d0dabb825..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59050}, goog:processID: 7252, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59050/devtoo..., se:cdpVersion: 157.0.8103.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2e70901cbbd40514708c7256d0c36e66)] -> xpath: //a[@class='user-logo-letter']]
+Session ID: 2e70901cbbd40514708c7256d0c36e66]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a _ngcontent-ng-c525558952="" data-bs-toggle="modal" data-bs-target="#exampleModalLogout" class="user-logo-letter">...</a> is not clickable at point (1223, 36). Other element would receive the click: <div _ngcontent-ng-c179827752="" class="ng-toast success">...</div>
+  (Session info: chrome=157.0.8103.79)
+Build info: version: '4.51.0', revision: '35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25.0.5.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2e70901cbbd40514708c7256d0c36e66, clickElement {id=f.38C59F13F7F12BD126E8EE0E74D5E51C.d.A5233A9CE114CD6E5925C1DDBEBF9D8D.e.281}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.79, chrome: {chromedriverVersion: 157.0.8103.78 (4b3d0dabb825..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:59050}, goog:processID: 7252, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:59050/devtoo..., se:cdpVersion: 157.0.8103.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2e70901cbbd40514708c7256d0c36e66)] -> xpath: //a[@class='user-logo-letter']]
+Session ID: 2e70901cbbd40514708c7256d0c36e66
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+at com.goldbharath.objectrepository.user.DashboardPage.clickOnUserProfileImageAndLogoutLink(DashboardPage.java:274)
+at Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingKycTest(Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.java:195)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:744)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUpdatingKycTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:39:52 IST" name="closeBrowser" finished-at="2026-11-19T14:39:52 IST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginUpdatingKycTest()[pri:2, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:39:52 IST" name="loginUpdatingKycTest" finished-at="2026-11-19T14:40:58 IST" depends-on-methods="Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.RegisteringToGoldbharathTest" duration-ms="65387" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUpdatingKycTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:40:58 IST" name="closeBrowser" finished-at="2026-11-19T14:40:58 IST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginToAdminRejectingDistributorKycTest()[pri:3, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:40:58 IST" name="loginToAdminRejectingDistributorKycTest" finished-at="2026-11-19T14:41:19 IST" depends-on-methods="Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingKycTest" duration-ms="21176" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAdminRejectingDistributorKycTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:41:19 IST" name="closeBrowser" finished-at="2026-11-19T14:41:19 IST" duration-ms="136" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginUpdatingRejectedKycTest()[pri:4, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:41:19 IST" name="loginUpdatingRejectedKycTest" finished-at="2026-11-19T14:42:29 IST" depends-on-methods="Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminRejectingDistributorKycTest" duration-ms="69611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUpdatingRejectedKycTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:42:29 IST" name="closeBrowser" finished-at="2026-11-19T14:42:29 IST" duration-ms="173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginToAdminApproveKycAndGivingGoldAndSilverLimitTest()[pri:5, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:42:29 IST" name="loginToAdminApproveKycAndGivingGoldAndSilverLimitTest" finished-at="2026-11-19T14:45:08 IST" depends-on-methods="Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingRejectedKycTest" duration-ms="159066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAdminApproveKycAndGivingGoldAndSilverLimitTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:45:08 IST" name="closeBrowser" finished-at="2026-11-19T14:45:08 IST" duration-ms="181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="distributorBookingGoldTest()[pri:6, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:45:08 IST" name="distributorBookingGoldTest" finished-at="2026-11-19T14:45:35 IST" depends-on-methods="Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminApproveKycAndGivingGoldAndSilverLimitTest" duration-ms="27042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distributorBookingGoldTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:45:35 IST" name="closeBrowser" finished-at="2026-11-19T14:45:36 IST" duration-ms="158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="distributorBuyingGoldTest()[pri:7, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:45:36 IST" name="distributorBuyingGoldTest" finished-at="2026-11-19T14:46:28 IST" depends-on-methods="Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorBookingGoldTest" duration-ms="52750" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distributorBuyingGoldTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:46:28 IST" name="closeBrowser" finished-at="2026-11-19T14:46:29 IST" duration-ms="146" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest()[pri:8, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:46:29 IST" name="adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest" finished-at="2026-11-19T14:47:02 IST" depends-on-methods="Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorBuyingGoldTest" duration-ms="33841" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:47:02 IST" name="closeBrowser" finished-at="2026-11-19T14:47:03 IST" duration-ms="171" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="distributorReUploadingPaymentDetailsTest()[pri:9, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:47:03 IST" name="distributorReUploadingPaymentDetailsTest" finished-at="2026-11-19T14:47:36 IST" depends-on-methods="Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest" duration-ms="33499" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distributorReUploadingPaymentDetailsTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:47:36 IST" name="closeBrowser" finished-at="2026-11-19T14:47:36 IST" duration-ms="177" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest()[pri:10, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:47:36 IST" name="adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest" finished-at="2026-11-19T14:48:13 IST" depends-on-methods="Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorReUploadingPaymentDetailsTest" duration-ms="37120" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:48:13 IST" name="closeBrowser" finished-at="2026-11-19T14:48:13 IST" duration-ms="154" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="distributorUpdatingDeliveryDetailsTest()[pri:11, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:48:13 IST" name="distributorUpdatingDeliveryDetailsTest" finished-at="2026-11-19T14:48:47 IST" depends-on-methods="Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest" duration-ms="33385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distributorUpdatingDeliveryDetailsTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:48:47 IST" name="closeBrowser" finished-at="2026-11-19T14:48:47 IST" duration-ms="174" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="adminAcceptingPickerDetails()[pri:12, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:48:47 IST" name="adminAcceptingPickerDetails" finished-at="2026-11-19T14:49:20 IST" depends-on-methods="Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorUpdatingDeliveryDetailsTest" duration-ms="33127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminAcceptingPickerDetails -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d]" started-at="2026-11-19T14:49:20 IST" name="closeBrowser" finished-at="2026-11-19T14:49:20 IST" duration-ms="145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest -->
+      <class name="Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest">
+        <test-method signature="RegisteringToGoldbharathTest(java.util.List)[pri:1, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:15:46 IST" name="RegisteringToGoldbharathTest" data-provider="mobileNumbers" finished-at="2026-11-19T14:17:12 IST" duration-ms="85869" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[9999999999, 9999999998, 9999999988, 9999999888, 9999998888, 9999988888, 9999888888, 9998888888, 9988888888, 9888888888, 9777777777, 9666666666, 9555555555, 9444444444, 9333333333, 9222222222, 9111111111, 9888889999, 9777778888, 9666669999]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteringToGoldbharathTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:17:12 IST" name="closeBrowser" finished-at="2026-11-19T14:17:12 IST" duration-ms="296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginUpdatingKycTest()[pri:2, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:17:12 IST" name="loginUpdatingKycTest" finished-at="2026-11-19T14:18:20 IST" depends-on-methods="Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.RegisteringToGoldbharathTest" duration-ms="68175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUpdatingKycTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:18:20 IST" name="closeBrowser" finished-at="2026-11-19T14:18:21 IST" duration-ms="286" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginToAdminRejectingDistributorKycTest()[pri:3, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:18:21 IST" name="loginToAdminRejectingDistributorKycTest" finished-at="2026-11-19T14:18:42 IST" depends-on-methods="Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingKycTest" duration-ms="20952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAdminRejectingDistributorKycTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:18:42 IST" name="closeBrowser" finished-at="2026-11-19T14:18:42 IST" duration-ms="220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginUpdatingRejectedKycTest()[pri:4, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:18:42 IST" name="loginUpdatingRejectedKycTest" finished-at="2026-11-19T14:19:44 IST" depends-on-methods="Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminRejectingDistributorKycTest" duration-ms="62452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUpdatingRejectedKycTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:19:44 IST" name="closeBrowser" finished-at="2026-11-19T14:19:45 IST" duration-ms="288" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginToAdminApproveKycAndGivingGoldAndSilverLimitTest()[pri:5, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:19:45 IST" name="loginToAdminApproveKycAndGivingGoldAndSilverLimitTest" finished-at="2026-11-19T14:22:24 IST" depends-on-methods="Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingRejectedKycTest" duration-ms="159426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAdminApproveKycAndGivingGoldAndSilverLimitTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:22:24 IST" name="closeBrowser" finished-at="2026-11-19T14:22:24 IST" duration-ms="267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="distributorBookingGoldTest()[pri:6, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:22:24 IST" name="distributorBookingGoldTest" finished-at="2026-11-19T14:22:53 IST" depends-on-methods="Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminApproveKycAndGivingGoldAndSilverLimitTest" duration-ms="29048" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distributorBookingGoldTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:22:53 IST" name="closeBrowser" finished-at="2026-11-19T14:22:54 IST" duration-ms="316" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="distributorBuyingGoldTest()[pri:7, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:22:54 IST" name="distributorBuyingGoldTest" finished-at="2026-11-19T14:23:47 IST" depends-on-methods="Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorBookingGoldTest" duration-ms="53368" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distributorBuyingGoldTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:23:47 IST" name="closeBrowser" finished-at="2026-11-19T14:23:47 IST" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest()[pri:8, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:23:47 IST" name="adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest" finished-at="2026-11-19T14:24:22 IST" depends-on-methods="Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorBuyingGoldTest" duration-ms="35195" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:24:22 IST" name="closeBrowser" finished-at="2026-11-19T14:24:23 IST" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="distributorReUploadingPaymentDetailsTest()[pri:9, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:24:23 IST" name="distributorReUploadingPaymentDetailsTest" finished-at="2026-11-19T14:24:56 IST" depends-on-methods="Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest" duration-ms="33597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distributorReUploadingPaymentDetailsTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:24:56 IST" name="closeBrowser" finished-at="2026-11-19T14:24:56 IST" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest()[pri:10, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:24:56 IST" name="adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest" finished-at="2026-11-19T14:25:35 IST" depends-on-methods="Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorReUploadingPaymentDetailsTest" duration-ms="38034" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:25:35 IST" name="closeBrowser" finished-at="2026-11-19T14:25:35 IST" duration-ms="194" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="distributorUpdatingDeliveryDetailsTest()[pri:11, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:25:35 IST" name="distributorUpdatingDeliveryDetailsTest" finished-at="2026-11-19T14:26:06 IST" depends-on-methods="Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest" duration-ms="31140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distributorUpdatingDeliveryDetailsTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:26:06 IST" name="closeBrowser" finished-at="2026-11-19T14:26:06 IST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="adminAcceptingPickerDetails()[pri:12, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:26:06 IST" name="adminAcceptingPickerDetails" finished-at="2026-11-19T14:26:38 IST" depends-on-methods="Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorUpdatingDeliveryDetailsTest" duration-ms="31985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminAcceptingPickerDetails -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]" started-at="2026-11-19T14:26:38 IST" name="closeBrowser" finished-at="2026-11-19T14:26:38 IST" duration-ms="231" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest -->
+      <class name="Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest">
+        <test-method signature="RegisteringToGoldbharathTest(java.util.List)[pri:1, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:06:06 IST" name="RegisteringToGoldbharathTest" data-provider="mobileNumbers" finished-at="2026-11-19T14:07:23 IST" duration-ms="76487" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[9999999999, 9999999998, 9999999988, 9999999888, 9999998888, 9999988888, 9999888888, 9998888888, 9988888888, 9888888888, 9777777777, 9666666666, 9555555555, 9444444444, 9333333333, 9222222222, 9111111111, 9888889999, 9777778888, 9666669999]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisteringToGoldbharathTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:07:23 IST" name="closeBrowser" finished-at="2026-11-19T14:07:23 IST" duration-ms="282" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginUpdatingKycTest()[pri:2, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:07:23 IST" name="loginUpdatingKycTest" finished-at="2026-11-19T14:08:09 IST" depends-on-methods="Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.RegisteringToGoldbharathTest" duration-ms="45956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUpdatingKycTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:08:09 IST" name="closeBrowser" finished-at="2026-11-19T14:08:09 IST" duration-ms="278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginToAdminRejectingDistributorKycTest()[pri:3, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:08:09 IST" name="loginToAdminRejectingDistributorKycTest" finished-at="2026-11-19T14:08:31 IST" depends-on-methods="Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingKycTest" duration-ms="22009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAdminRejectingDistributorKycTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:08:31 IST" name="closeBrowser" finished-at="2026-11-19T14:08:31 IST" duration-ms="190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginUpdatingRejectedKycTest()[pri:4, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:08:31 IST" name="loginUpdatingRejectedKycTest" finished-at="2026-11-19T14:09:22 IST" depends-on-methods="Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminRejectingDistributorKycTest" duration-ms="50726" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginUpdatingRejectedKycTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:09:22 IST" name="closeBrowser" finished-at="2026-11-19T14:09:22 IST" duration-ms="308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="loginToAdminApproveKycAndGivingGoldAndSilverLimitTest()[pri:5, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:09:22 IST" name="loginToAdminApproveKycAndGivingGoldAndSilverLimitTest" finished-at="2026-11-19T14:11:32 IST" depends-on-methods="Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingRejectedKycTest" duration-ms="130044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAdminApproveKycAndGivingGoldAndSilverLimitTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:11:32 IST" name="closeBrowser" finished-at="2026-11-19T14:11:33 IST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="distributorBookingGoldTest()[pri:6, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:11:33 IST" name="distributorBookingGoldTest" finished-at="2026-11-19T14:12:00 IST" depends-on-methods="Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminApproveKycAndGivingGoldAndSilverLimitTest" duration-ms="27202" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distributorBookingGoldTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:12:00 IST" name="closeBrowser" finished-at="2026-11-19T14:12:00 IST" duration-ms="357" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="distributorBuyingGoldTest()[pri:7, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:12:00 IST" name="distributorBuyingGoldTest" finished-at="2026-11-19T14:12:53 IST" depends-on-methods="Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorBookingGoldTest" duration-ms="53184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distributorBuyingGoldTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:12:53 IST" name="closeBrowser" finished-at="2026-11-19T14:12:54 IST" duration-ms="268" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest()[pri:8, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:12:54 IST" name="adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest" finished-at="2026-11-19T14:13:28 IST" depends-on-methods="Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorBuyingGoldTest" duration-ms="34546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:13:28 IST" name="closeBrowser" finished-at="2026-11-19T14:13:28 IST" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="distributorReUploadingPaymentDetailsTest()[pri:9, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:13:28 IST" name="distributorReUploadingPaymentDetailsTest" finished-at="2026-11-19T14:14:02 IST" depends-on-methods="Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest" duration-ms="33916" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distributorReUploadingPaymentDetailsTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:14:02 IST" name="closeBrowser" finished-at="2026-11-19T14:14:03 IST" duration-ms="283" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest()[pri:10, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:14:03 IST" name="adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest" finished-at="2026-11-19T14:14:41 IST" depends-on-methods="Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorReUploadingPaymentDetailsTest" duration-ms="38272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:14:41 IST" name="closeBrowser" finished-at="2026-11-19T14:14:41 IST" duration-ms="248" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="distributorUpdatingDeliveryDetailsTest()[pri:11, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:14:41 IST" name="distributorUpdatingDeliveryDetailsTest" finished-at="2026-11-19T14:15:13 IST" depends-on-methods="Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest" duration-ms="31752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- distributorUpdatingDeliveryDetailsTest -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:15:13 IST" name="closeBrowser" finished-at="2026-11-19T14:15:13 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method signature="adminAcceptingPickerDetails()[pri:12, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:15:13 IST" name="adminAcceptingPickerDetails" finished-at="2026-11-19T14:15:45 IST" depends-on-methods="Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorUpdatingDeliveryDetailsTest" duration-ms="32370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminAcceptingPickerDetails -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]" started-at="2026-11-19T14:15:45 IST" name="closeBrowser" finished-at="2026-11-19T14:15:46 IST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest -->
+    </test> <!-- GoldBharat End To End Workflows -->
+  </suite> <!-- GoldBharat Sequential Execution Suite -->
+</testng-results>

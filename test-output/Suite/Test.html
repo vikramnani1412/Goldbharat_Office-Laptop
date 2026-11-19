@@ -1,0 +1,996 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>24/2/22</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Nov 19 12:23:21 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>1241 seconds (1241943 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.RegisteringToGoldbharathTest()'><b>RegisteringToGoldbharathTest</b><br>Test class: Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest<br>Parameters: [9999999999, 9999999998, 9999999988, 9999999888, 9999998888, 9999988888, 9999888888, 9998888888, 9988888888, 9888888888, 9777777777, 9666666666, 9555555555, 9444444444, 9333333333, 9222222222, 9111111111, 9888889999, 9777778888, 9666669999]</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Bharat Nagar Colony&apos;]/preceding-sibling::input[@type=&apos;radio&apos;]&quot;}
+  (Session info: chrome=157.0.8103.79)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.5.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbbf2b18c269ca6ae8808456d55bf0a7, findElement {using=xpath, value=//span[.=&apos;Bharat Nagar Colony&apos;]/preceding-sibling::input[@type=&apos;radio&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.79, chrome: {chromedriverVersion: 157.0.8103.78 (4b3d0dabb825..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60444}, goog:processID: 7580, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60444/devtoo..., se:cdpVersion: 157.0.8103.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dbbf2b18c269ca6ae8808456d55bf0a7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:441)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:435)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.goldbharath.objectrepository.user.RegisterPage.registeringToGoldbharathApplication(RegisterPage.java:139)
+	at Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.RegisteringToGoldbharathTest(Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.java:149)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace984527625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace984527625'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Bharat Nagar Colony&apos;]/preceding-sibling::input[@type=&apos;radio&apos;]&quot;}
+  (Session info: chrome=157.0.8103.79)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.5.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [dbbf2b18c269ca6ae8808456d55bf0a7, findElement {using=xpath, value=//span[.=&apos;Bharat Nagar Colony&apos;]/preceding-sibling::input[@type=&apos;radio&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.79, chrome: {chromedriverVersion: 157.0.8103.78 (4b3d0dabb825..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60444}, goog:processID: 7580, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60444/devtoo..., se:cdpVersion: 157.0.8103.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: dbbf2b18c269ca6ae8808456d55bf0a7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:441)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:435)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.goldbharath.objectrepository.user.RegisterPage.registeringToGoldbharathApplication(RegisterPage.java:139)
+	at Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.RegisteringToGoldbharathTest(Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.java:149)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>29</td>
+<td>Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3</td></tr>
+<tr>
+<td title='Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.RegisteringToGoldbharathTest()'><b>RegisteringToGoldbharathTest</b><br>Test class: Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest<br>Parameters: [9999999999, 9999999998, 9999999988, 9999999888, 9999998888, 9999988888, 9999888888, 9998888888, 9988888888, 9888888888, 9777777777, 9666666666, 9555555555, 9444444444, 9333333333, 9222222222, 9111111111, 9888889999, 9777778888, 9666669999]</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Bharat Nagar Colony&apos;]/preceding-sibling::input[@type=&apos;radio&apos;]&quot;}
+  (Session info: chrome=157.0.8103.79)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.5.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97871feda774301ef11773d833f8849f, findElement {using=xpath, value=//span[.=&apos;Bharat Nagar Colony&apos;]/preceding-sibling::input[@type=&apos;radio&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.79, chrome: {chromedriverVersion: 157.0.8103.78 (4b3d0dabb825..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54629}, goog:processID: 12576, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54629/devtoo..., se:cdpVersion: 157.0.8103.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97871feda774301ef11773d833f8849f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:441)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:435)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.goldbharath.objectrepository.user.RegisterPage.registeringToGoldbharathApplication(RegisterPage.java:139)
+	at Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.RegisteringToGoldbharathTest(One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.java:147)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2023197002", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2023197002'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[.=&apos;Bharat Nagar Colony&apos;]/preceding-sibling::input[@type=&apos;radio&apos;]&quot;}
+  (Session info: chrome=157.0.8103.79)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
+Build info: version: &apos;4.51.0&apos;, revision: &apos;35c5fab 35c5fab4a58fa5878edb255eb7747b04ca51a015&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.5.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [97871feda774301ef11773d833f8849f, findElement {using=xpath, value=//span[.=&apos;Bharat Nagar Colony&apos;]/preceding-sibling::input[@type=&apos;radio&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 157.0.8103.79, chrome: {chromedriverVersion: 157.0.8103.78 (4b3d0dabb825..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54629}, goog:processID: 12576, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54629/devtoo..., se:cdpVersion: 157.0.8103.79, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10...., webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 97871feda774301ef11773d833f8849f
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:143)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:253)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:217)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:175)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:689)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:173)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:441)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:435)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.click(Unknown Source)
+	at com.goldbharath.objectrepository.user.RegisterPage.registeringToGoldbharathApplication(RegisterPage.java:139)
+	at Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.RegisteringToGoldbharathTest(One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.java:147)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:697)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:1005)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>20</td>
+<td>Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminAcceptingPickerDetails()'><b>adminAcceptingPickerDetails</b><br>Test class: Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>31</td>
+<td>Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d</td></tr>
+<tr>
+<td title='Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingRejectedKycTest()'><b>loginUpdatingRejectedKycTest</b><br>Test class: Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>69</td>
+<td>Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d</td></tr>
+<tr>
+<td title='Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.distributorBookingGoldTest()'><b>distributorBookingGoldTest</b><br>Test class: Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>27</td>
+<td>Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb</td></tr>
+<tr>
+<td title='Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.distributorReUploadingPaymentDetailsTest()'><b>distributorReUploadingPaymentDetailsTest</b><br>Test class: Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>33</td>
+<td>Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb</td></tr>
+<tr>
+<td title='Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.RegisteringToGoldbharathTest()'><b>RegisteringToGoldbharathTest</b><br>Test class: Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest<br>Parameters: [9999999999, 9999999998, 9999999988, 9999999888, 9999998888, 9999988888, 9999888888, 9998888888, 9988888888, 9888888888, 9777777777, 9666666666, 9555555555, 9444444444, 9333333333, 9222222222, 9111111111, 9888889999, 9777778888, 9666669999]</td>
+<td></td>
+<td>44</td>
+<td>Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d</td></tr>
+<tr>
+<td title='Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminApproveKycAndGivingGoldAndSilverLimitTest()'><b>loginToAdminApproveKycAndGivingGoldAndSilverLimitTest</b><br>Test class: Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>140</td>
+<td>Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb</td></tr>
+<tr>
+<td title='Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingKycTest()'><b>loginUpdatingKycTest</b><br>Test class: Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>66</td>
+<td>Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb</td></tr>
+<tr>
+<td title='Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingKycTest()'><b>loginUpdatingKycTest</b><br>Test class: Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>64</td>
+<td>Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d</td></tr>
+<tr>
+<td title='Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest()'><b>adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest</b><br>Test class: Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>34</td>
+<td>Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d</td></tr>
+<tr>
+<td title='Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorReUploadingPaymentDetailsTest()'><b>distributorReUploadingPaymentDetailsTest</b><br>Test class: Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>33</td>
+<td>Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d</td></tr>
+<tr>
+<td title='Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminRejectingDistributorKycTest()'><b>loginToAdminRejectingDistributorKycTest</b><br>Test class: Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>20</td>
+<td>Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d</td></tr>
+<tr>
+<td title='Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorBuyingGoldTest()'><b>distributorBuyingGoldTest</b><br>Test class: Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>52</td>
+<td>Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d</td></tr>
+<tr>
+<td title='Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingRejectedKycTest()'><b>loginUpdatingRejectedKycTest</b><br>Test class: Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>68</td>
+<td>Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb</td></tr>
+<tr>
+<td title='Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.RegisteringToGoldbharathTest()'><b>RegisteringToGoldbharathTest</b><br>Test class: Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest<br>Parameters: [9999999999, 9999999998, 9999999988, 9999999888, 9999998888, 9999988888, 9999888888, 9998888888, 9988888888, 9888888888, 9777777777, 9666666666, 9555555555, 9444444444, 9333333333, 9222222222, 9111111111, 9888889999, 9777778888, 9666669999]</td>
+<td></td>
+<td>34</td>
+<td>Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb</td></tr>
+<tr>
+<td title='Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.distributorBuyingGoldTest()'><b>distributorBuyingGoldTest</b><br>Test class: Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>53</td>
+<td>Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb</td></tr>
+<tr>
+<td title='Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.adminAcceptingPickerDetails()'><b>adminAcceptingPickerDetails</b><br>Test class: Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>31</td>
+<td>Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb</td></tr>
+<tr>
+<td title='Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest()'><b>adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest</b><br>Test class: Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>33</td>
+<td>Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb</td></tr>
+<tr>
+<td title='Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest()'><b>adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest</b><br>Test class: Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>37</td>
+<td>Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb</td></tr>
+<tr>
+<td title='Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.distributorUpdatingDeliveryDetailsTest()'><b>distributorUpdatingDeliveryDetailsTest</b><br>Test class: Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>30</td>
+<td>Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb</td></tr>
+<tr>
+<td title='Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminRejectingDistributorKycTest()'><b>loginToAdminRejectingDistributorKycTest</b><br>Test class: Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>20</td>
+<td>Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest@727eb8cb</td></tr>
+<tr>
+<td title='Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorBookingGoldTest()'><b>distributorBookingGoldTest</b><br>Test class: Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>26</td>
+<td>Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d</td></tr>
+<tr>
+<td title='Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorUpdatingDeliveryDetailsTest()'><b>distributorUpdatingDeliveryDetailsTest</b><br>Test class: Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>30</td>
+<td>Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d</td></tr>
+<tr>
+<td title='Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminApproveKycAndGivingGoldAndSilverLimitTest()'><b>loginToAdminApproveKycAndGivingGoldAndSilverLimitTest</b><br>Test class: Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>158</td>
+<td>Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d</td></tr>
+<tr>
+<td title='Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest()'><b>adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest</b><br>Test class: Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td></td>
+<td>37</td>
+<td>Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest@39d9314d</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorBookingGoldTest()'><b>distributorBookingGoldTest</b><br>Test class: Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorBookingGoldTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminApproveKycAndGivingGoldAndSilverLimitTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1924064270", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1924064270'><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorBookingGoldTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminApproveKycAndGivingGoldAndSilverLimitTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc</td></tr>
+<tr>
+<td title='Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorBookingGoldTest()'><b>distributorBookingGoldTest</b><br>Test class: Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorBookingGoldTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminApproveKycAndGivingGoldAndSilverLimitTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace991329879", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace991329879'><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorBookingGoldTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminApproveKycAndGivingGoldAndSilverLimitTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3</td></tr>
+<tr>
+<td title='Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorBuyingGoldTest()'><b>distributorBuyingGoldTest</b><br>Test class: Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorBuyingGoldTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorBookingGoldTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2054086028", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2054086028'><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorBuyingGoldTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorBookingGoldTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3</td></tr>
+<tr>
+<td title='Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingKycTest()'><b>loginUpdatingKycTest</b><br>Test class: Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingKycTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.RegisteringToGoldbharathTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace602569225", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace602569225'><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingKycTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.RegisteringToGoldbharathTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc</td></tr>
+<tr>
+<td title='Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminRejectingDistributorKycTest()'><b>loginToAdminRejectingDistributorKycTest</b><br>Test class: Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminRejectingDistributorKycTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingKycTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1829414029", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1829414029'><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminRejectingDistributorKycTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingKycTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc</td></tr>
+<tr>
+<td title='Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest()'><b>adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest</b><br>Test class: Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorReUploadingPaymentDetailsTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace469199056", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace469199056'><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorReUploadingPaymentDetailsTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc</td></tr>
+<tr>
+<td title='Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorBuyingGoldTest()'><b>distributorBuyingGoldTest</b><br>Test class: Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorBuyingGoldTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorBookingGoldTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace23355501", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace23355501'><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorBuyingGoldTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorBookingGoldTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc</td></tr>
+<tr>
+<td title='Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorReUploadingPaymentDetailsTest()'><b>distributorReUploadingPaymentDetailsTest</b><br>Test class: Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorReUploadingPaymentDetailsTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1113888430", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1113888430'><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorReUploadingPaymentDetailsTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3</td></tr>
+<tr>
+<td title='Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest()'><b>adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest</b><br>Test class: Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorBuyingGoldTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1814332111", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1814332111'><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorBuyingGoldTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3</td></tr>
+<tr>
+<td title='Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminApproveKycAndGivingGoldAndSilverLimitTest()'><b>loginToAdminApproveKycAndGivingGoldAndSilverLimitTest</b><br>Test class: Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminApproveKycAndGivingGoldAndSilverLimitTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingRejectedKycTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1315277099", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1315277099'><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminApproveKycAndGivingGoldAndSilverLimitTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingRejectedKycTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3</td></tr>
+<tr>
+<td title='Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminApproveKycAndGivingGoldAndSilverLimitTest()'><b>loginToAdminApproveKycAndGivingGoldAndSilverLimitTest</b><br>Test class: Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminApproveKycAndGivingGoldAndSilverLimitTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingRejectedKycTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1054602155", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1054602155'><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminApproveKycAndGivingGoldAndSilverLimitTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingRejectedKycTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc</td></tr>
+<tr>
+<td title='Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorUpdatingDeliveryDetailsTest()'><b>distributorUpdatingDeliveryDetailsTest</b><br>Test class: Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorUpdatingDeliveryDetailsTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace104482058", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace104482058'><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorUpdatingDeliveryDetailsTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc</td></tr>
+<tr>
+<td title='Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingRejectedKycTest()'><b>loginUpdatingRejectedKycTest</b><br>Test class: Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingRejectedKycTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminRejectingDistributorKycTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace559043427", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace559043427'><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingRejectedKycTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminRejectingDistributorKycTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc</td></tr>
+<tr>
+<td title='Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest()'><b>adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest</b><br>Test class: Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorBuyingGoldTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1962366982", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1962366982'><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorBuyingGoldTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc</td></tr>
+<tr>
+<td title='Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest()'><b>adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest</b><br>Test class: Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorReUploadingPaymentDetailsTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1021632464", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1021632464'><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorReUploadingPaymentDetailsTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3</td></tr>
+<tr>
+<td title='Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorUpdatingDeliveryDetailsTest()'><b>distributorUpdatingDeliveryDetailsTest</b><br>Test class: Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorUpdatingDeliveryDetailsTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace322835849", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace322835849'><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorUpdatingDeliveryDetailsTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3</td></tr>
+<tr>
+<td title='Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminRejectingDistributorKycTest()'><b>loginToAdminRejectingDistributorKycTest</b><br>Test class: Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminRejectingDistributorKycTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingKycTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1877290333", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1877290333'><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminRejectingDistributorKycTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingKycTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3</td></tr>
+<tr>
+<td title='Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminAcceptingPickerDetails()'><b>adminAcceptingPickerDetails</b><br>Test class: Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminAcceptingPickerDetails() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorUpdatingDeliveryDetailsTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace622514114", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace622514114'><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.adminAcceptingPickerDetails() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.distributorUpdatingDeliveryDetailsTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3</td></tr>
+<tr>
+<td title='Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.adminAcceptingPickerDetails()'><b>adminAcceptingPickerDetails</b><br>Test class: Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.adminAcceptingPickerDetails() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorUpdatingDeliveryDetailsTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace177041494", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace177041494'><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.adminAcceptingPickerDetails() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorUpdatingDeliveryDetailsTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc</td></tr>
+<tr>
+<td title='Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorReUploadingPaymentDetailsTest()'><b>distributorReUploadingPaymentDetailsTest</b><br>Test class: Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorReUploadingPaymentDetailsTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace943157290", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace943157290'><pre>java.lang.Throwable: Method Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.distributorReUploadingPaymentDetailsTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc depends on not successfully finished methods 
+[Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest.adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest() on instance Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest@1ae8bcbc</td></tr>
+<tr>
+<td title='Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingRejectedKycTest()'><b>loginUpdatingRejectedKycTest</b><br>Test class: Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingRejectedKycTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminRejectingDistributorKycTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace475992257", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace475992257'><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingRejectedKycTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginToAdminRejectingDistributorKycTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3</td></tr>
+<tr>
+<td title='Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingKycTest()'><b>loginUpdatingKycTest</b><br>Test class: Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest</td>
+<td><div><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingKycTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.RegisteringToGoldbharathTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1625216993", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1625216993'><pre>java.lang.Throwable: Method Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.loginUpdatingKycTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3 depends on not successfully finished methods 
+[Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest.RegisteringToGoldbharathTest() on instance Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3]
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>0</td>
+<td>Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest@45d2ade3</td></tr>
+</table><p>
+</body>
+</html>

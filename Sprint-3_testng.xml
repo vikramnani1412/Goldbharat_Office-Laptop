@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="GoldBharat Sequential Execution Suite"
+       parallel="none"
+       preserve-order="true"
+       verbose="2">
+
+    <test name="GoldBharat End To End Workflows"
+          preserve-order="true">
+
+        <classes>
+            <class name="Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest"/>
+
+            <class name="Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest"/>
+
+            <class name="Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest"/>
+
+            <class name="Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest"/>
+        </classes>
+
+    </test>
+
+</suite>
