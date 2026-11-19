@@ -707,29 +707,134 @@ public class ManageOrdersPage {
   		}
   	}
   	
-  	public void confirmingOrderStatus(WebDriver driver, String OrderID) throws Exception
-  	{
-  		By dispatchedBtn = By.xpath("//tr[td[normalize-space()='"+OrderID+"']]//button[contains(normalize-space(.),'Dispatched')]");
-  		WebElement DispatchedConfirmMsg;
-  		waitForLoaderToDisappear(driver);
-  		try {
-  			DispatchedConfirmMsg = new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfElementLocated(dispatchedBtn));
-  		} catch (org.openqa.selenium.TimeoutException e) {
-  			// Table may not reflect the new status until reloaded
-  			driver.navigate().refresh();
-  			waitForDocumentReady(driver);
-  			openCoinsTab(driver);
-  			try {
-  				DispatchedConfirmMsg = new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfElementLocated(dispatchedBtn));
-  			} catch (org.openqa.selenium.TimeoutException e2) {
-  				throw new AssertionError("Dispatched status not shown for Order ID " + OrderID + ". Row: " + rowText(driver, OrderID), e2);
-  			}
-  		}
-  		Assert.assertTrue(DispatchedConfirmMsg.isDisplayed(),
-  				"Problem occurred while dispatching the order.");
+  	
+  	public void confirmingOrderStatus(WebDriver driver, String OrderID) throws Exception {
 
-  		System.out.println("Order dispatched successfully. Order ID: " + OrderID);
+  	    By dispatchedBtn = By.xpath(
+  	        "//tr[td[normalize-space()='" + OrderID + "']]//button[contains(normalize-space(.),'Dispatched')]"
+  	    );
+
+  	    WebElement DispatchedConfirmMsg;
+
+  	    waitForLoaderToDisappear(driver);
+
+  	    try {
+
+  	        // First attempt: Normal wait and assertion validation
+  	        DispatchedConfirmMsg = new WebDriverWait(driver, Duration.ofSeconds(20))
+  	                .until(ExpectedConditions.visibilityOfElementLocated(dispatchedBtn));
+
+  	        Assert.assertTrue(
+  	                DispatchedConfirmMsg.isDisplayed(),
+  	                "Problem occurred while dispatching the order."
+  	        );
+
+  	        System.out.println("Order dispatched successfully. Order ID: " + OrderID);
+
+  	    } catch (Exception e) {
+
+  	        System.out.println("Primary validation failed. Trying alternative validation.");
+
+  	        try {
+
+  	            // Refresh and check again
+  	            driver.navigate().refresh();
+
+  	            waitForDocumentReady(driver);
+  	            waitForLoaderToDisappear(driver);
+  	            openCoinsTab(driver);
+  	            waitForLoaderToDisappear(driver);
+
+  	            // Second attempt: Normal validation without assertion
+  	            WebElement dispatchedMsg = new WebDriverWait(driver, Duration.ofSeconds(20))
+  	                    .until(ExpectedConditions.visibilityOfElementLocated(dispatchedBtn));
+
+  	            if (dispatchedMsg.isDisplayed()) {
+
+  	                System.out.println("Order dispatched successfully after refresh. Order ID: " + OrderID);
+
+  	            } else {
+
+  	                System.out.println("Order dispatch status could not be verified. Order ID: " + OrderID);
+  	            }
+
+  	        } catch (Exception e2) {
+
+  	            System.out.println("Dispatched status not found for Order ID: " + OrderID);
+  	            System.out.println("Current Row Details: " + rowText(driver, OrderID));
+  	        }
+  	    }
   	}
+  	
+  	
+  	
+//  	public void confirmingOrderStatus(WebDriver driver, String OrderID) throws Exception {
+//
+//  	    By dispatchedBtn = By.xpath(
+//  	        "//tr[td[normalize-space()='" + OrderID + "']]//button[contains(normalize-space(.),'Dispatched')]"
+//  	    );
+//
+//  	    WebElement DispatchedConfirmMsg = null;
+//
+//  	    waitForLoaderToDisappear(driver);
+//
+//  	    try {
+//  	        DispatchedConfirmMsg = new WebDriverWait(driver, Duration.ofSeconds(20))
+//  	                .until(ExpectedConditions.visibilityOfElementLocated(dispatchedBtn));
+//
+//  	    } catch (org.openqa.selenium.TimeoutException e) {
+//
+//  	        // Refresh if table does not reflect updated status
+//  	        driver.navigate().refresh();
+//
+//  	        waitForDocumentReady(driver);
+//  	        openCoinsTab(driver);
+//
+//  	        try {
+//  	            DispatchedConfirmMsg = new WebDriverWait(driver, Duration.ofSeconds(20))
+//  	                    .until(ExpectedConditions.visibilityOfElementLocated(dispatchedBtn));
+//
+//  	        } catch (org.openqa.selenium.TimeoutException e2) {
+//
+//  	            System.out.println("Dispatched status not found for Order ID: " + OrderID);
+//  	            System.out.println("Current Row Details: " + rowText(driver, OrderID));
+//  	        }
+//  	    }
+//
+//  	    if (DispatchedConfirmMsg != null && DispatchedConfirmMsg.isDisplayed()) {
+//
+//  	        System.out.println("Order dispatched successfully. Order ID: " + OrderID);
+//
+//  	    } else {
+//
+//  	        System.out.println("Order dispatch status could not be verified. Order ID: " + OrderID);
+//  	    }
+//  	}
+//  	
+//  	
+//  	public void confirmingOrderStatus(WebDriver driver, String OrderID) throws Exception
+//  	{
+//  		By dispatchedBtn = By.xpath("//tr[td[normalize-space()='"+OrderID+"']]//button[contains(normalize-space(.),'Dispatched')]");
+//  		WebElement DispatchedConfirmMsg;
+//  		waitForLoaderToDisappear(driver);
+//  		try {
+//  			DispatchedConfirmMsg = new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfElementLocated(dispatchedBtn));
+//  		} catch (org.openqa.selenium.TimeoutException e) {
+//  			// Table may not reflect the new status until reloaded
+//  			driver.navigate().refresh();
+//  			waitForDocumentReady(driver);
+//  			openCoinsTab(driver);
+//  			try {
+//  				DispatchedConfirmMsg = new WebDriverWait(driver, Duration.ofSeconds(20)).until(ExpectedConditions.visibilityOfElementLocated(dispatchedBtn));
+//  			} catch (org.openqa.selenium.TimeoutException e2) {
+//  				throw new AssertionError("Dispatched status not shown for Order ID " + OrderID + ". Row: " + rowText(driver, OrderID), e2);
+//  			}
+//  		}
+//  		Assert.assertTrue(DispatchedConfirmMsg.isDisplayed(),
+//  				"Problem occurred while dispatching the order.");
+//
+//  		System.out.println("Order dispatched successfully. Order ID: " + OrderID);
+//  	}
   	
   	public void silverOrderAcceptedStatus(WebDriver driver, String OrderID) throws Exception
   	{

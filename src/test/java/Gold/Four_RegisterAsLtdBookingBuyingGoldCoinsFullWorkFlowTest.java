@@ -294,7 +294,7 @@ public class Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest {
             new LoginPage(driver).LoginToApplication(driver, registeredMobileNumber, OTP);
             waitForPageLoad();
 
-            new DashboardPage(driver).clickOnUserProfileImageAndLogoutLink(driver);
+            new DashboardPage(driver).clickOnUserProfileImageAndLogoutLinkk(driver);
             new UserProfilePage(driver).clickOnKycLink();
 
             new KycAsLtdPage(driver).LtdKycAfterRejected(driver, name, mobileNumber, aadharNumber, panNumber, secondDirectorName, gstNumber, cinNumber, bankName, acNumber, ifscCode, accountHolderName);

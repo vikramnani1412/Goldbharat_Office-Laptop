@@ -3,6 +3,23 @@
 <suite name="Failed suite [GoldBharat Sequential Execution Suite]" guice-stage="DEVELOPMENT" verbose="2">
   <test thread-count="5" name="GoldBharat End To End Workflows(failed)" verbose="2">
     <classes>
+      <class name="Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest">
+        <methods>
+          <include name="adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest"/>
+          <include name="adminAcceptingPickerDetails"/>
+          <include name="loginUpdatingRejectedKycTest"/>
+          <include name="closeBrowser"/>
+          <include name="adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest"/>
+          <include name="loginUpdatingKycTest"/>
+          <include name="loginToAdminApproveKycAndGivingGoldAndSilverLimitTest"/>
+          <include name="distributorBuyingGoldTest"/>
+          <include name="distributorBookingGoldTest"/>
+          <include name="distributorReUploadingPaymentDetailsTest"/>
+          <include name="loginToAdminRejectingDistributorKycTest"/>
+          <include name="RegisteringToGoldbharathTest"/>
+          <include name="distributorUpdatingDeliveryDetailsTest"/>
+        </methods>
+      </class> <!-- Gold.Three_RegisterAsLLpBookingBuyingGoldCoinsFullWorkFlowTest -->
       <class name="Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest">
         <methods>
           <include name="RegisteringToGoldbharathTest"/>
@@ -20,6 +37,40 @@
           <include name="adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest"/>
         </methods>
       </class> <!-- Gold.One_RegisterAsProprietorBookingBuyingGoldCoinsFullWorkFlowTest -->
+      <class name="Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest">
+        <methods>
+          <include name="distributorBuyingGoldTest"/>
+          <include name="distributorReUploadingPaymentDetailsTest"/>
+          <include name="distributorBookingGoldTest"/>
+          <include name="loginToAdminRejectingDistributorKycTest"/>
+          <include name="distributorUpdatingDeliveryDetailsTest"/>
+          <include name="RegisteringToGoldbharathTest"/>
+          <include name="adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest"/>
+          <include name="adminAcceptingPickerDetails"/>
+          <include name="loginUpdatingRejectedKycTest"/>
+          <include name="closeBrowser"/>
+          <include name="adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest"/>
+          <include name="loginToAdminApproveKycAndGivingGoldAndSilverLimitTest"/>
+          <include name="loginUpdatingKycTest"/>
+        </methods>
+      </class> <!-- Gold.Two_RegisterAsPvtLtdBookingBuyingGoldCoinsFullWorkFlowTest -->
+      <class name="Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest">
+        <methods>
+          <include name="loginToAdminApproveKycAndGivingGoldAndSilverLimitTest"/>
+          <include name="loginUpdatingKycTest"/>
+          <include name="adminCheckingPurchasedQuantityGoldAndDeclinePaymentTest"/>
+          <include name="adminAcceptingPickerDetails"/>
+          <include name="adminCheckingPurchasedQuantityGoldAndConfirmPaymentTest"/>
+          <include name="closeBrowser"/>
+          <include name="loginUpdatingRejectedKycTest"/>
+          <include name="RegisteringToGoldbharathTest"/>
+          <include name="distributorUpdatingDeliveryDetailsTest"/>
+          <include name="loginToAdminRejectingDistributorKycTest"/>
+          <include name="distributorBuyingGoldTest"/>
+          <include name="distributorBookingGoldTest"/>
+          <include name="distributorReUploadingPaymentDetailsTest"/>
+        </methods>
+      </class> <!-- Gold.Four_RegisterAsLtdBookingBuyingGoldCoinsFullWorkFlowTest -->
     </classes>
   </test> <!-- GoldBharat End To End Workflows(failed) -->
 </suite> <!-- Failed suite [GoldBharat Sequential Execution Suite] -->

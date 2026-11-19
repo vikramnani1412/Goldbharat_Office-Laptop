@@ -37,7 +37,6 @@ public class DashboardPage {
     
     @FindBy(xpath="//span[@class='userDetails']")private WebElement UserNameEle;
     
-    //////
     
     @FindBy(xpath="//a[@class='user-logo-letter']")private WebElement UserProfileImg;
     
